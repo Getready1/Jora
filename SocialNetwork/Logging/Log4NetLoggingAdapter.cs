@@ -5,7 +5,7 @@ using System.Reflection;
 
 namespace SocialNetwork.Logging
 {
-    public class Log4NetLoggingAdapter
+    public class Log4NetLoggingAdapter : ILogger
     {
         private readonly ILog _internalLogger;
 

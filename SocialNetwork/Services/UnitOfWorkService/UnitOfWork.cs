@@ -1,5 +1,7 @@
 ﻿using Autofac;
 using SocialNetwork.DAL;
+using SocialNetwork.Models;
+using SocialNetwork.Services.RepositoryService;
 using System;
 
 namespace SocialNetwork.Services.UnitOfWorkService
@@ -7,11 +9,21 @@ namespace SocialNetwork.Services.UnitOfWorkService
     public class UnitOfWork : IUnitOfWork, IDisposable
     {
         private IContext _context;
+        private Lazy<IRepository<User>> _userRepository;
         bool _disposed = false;
 
         public UnitOfWork(ILifetimeScope scope)
         {
             this._context = scope.Resolve<IContext>();
+            this._userRepository = new Lazy<IRepository<User>>(() => scope.Resolve<IRepository<User>>(new NamedParameter("context", _context)));
+        }
+
+        public IRepository<User> UserRepository
+        {
+            get
+            {
+                return this._userRepository.Value;
+            }
         }
 
         public void SaveChanges()

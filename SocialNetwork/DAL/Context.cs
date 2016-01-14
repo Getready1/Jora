@@ -1,4 +1,5 @@
-﻿using System.Data.Entity;
+﻿using SocialNetwork.Models;
+using System.Data.Entity;
 
 namespace SocialNetwork.DAL
 {
@@ -10,8 +11,11 @@ namespace SocialNetwork.DAL
             Database.SetInitializer(new DbInitializer());
         }
 
+        public IDbSet<User> Users { get; set; }
+
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
+            modelBuilder.Configurations.Add(new UserConfiguration());
         }
     }
 }

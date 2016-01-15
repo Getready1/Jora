@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Data.Entity.ModelConfiguration;
+using System.Collections.Generic;
 
 namespace SocialNetwork.Models
 {
@@ -9,6 +10,13 @@ namespace SocialNetwork.Models
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Password { get; set; }
+        public string Email { get; set; }
+        public bool Gender { get; set; }
+        public string Country { get; set; }
+        public string City { get; set; } 
+
+        public virtual List<User> Followers { get; set; }
+        public virtual List<User> Followed { get; set; }
     }
 
     public class UserConfiguration : EntityTypeConfiguration<User>

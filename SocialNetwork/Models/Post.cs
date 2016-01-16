@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+using System.Data.Entity.ModelConfiguration;
 
 namespace SocialNetwork.Models
 {
@@ -11,5 +10,13 @@ namespace SocialNetwork.Models
         public virtual Song PostedSong { get; set; }
 
         public virtual List<Message> Comments { get; set; }
+    }
+
+    public class PostConfiguration : EntityTypeConfiguration<Post>
+    {
+        public PostConfiguration()
+        {
+            HasKey(p => p.PostId);
+        }
     }
 }

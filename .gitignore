@@ -28,6 +28,9 @@ obj/
 [Rr]elease*/
 _ReSharper*/
 [Tt]est[Rr]esult*
+/.vs
+/obj
+/bin
 
 # Folder config file
 Desktop.ini

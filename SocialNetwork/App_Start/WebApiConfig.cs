@@ -6,10 +6,13 @@ namespace SocialNetwork
     {
         public static void Register(HttpConfiguration config)
         {
-            // Конфигурация и службы веб-API
-
-            // Маршруты веб-API
             config.MapHttpAttributeRoutes();
+
+            config.Routes.MapHttpRoute(
+                name: "MainPage",
+                routeTemplate: "{controller}/{action}",
+                defaults: new { controller = "Home", action = "Index" }
+            );
 
             config.Routes.MapHttpRoute(
                 name: "DefaultApi",

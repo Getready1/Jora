@@ -1,27 +1,30 @@
-﻿using SocialNetwork.Models.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
+﻿using SocialNetwork.AccountService;
+using SocialNetwork.Models.ViewModels;
 using System.Web.Http;
 
 namespace SocialNetwork.Controllers
 {
     public class AccountController : ApiController
     {
+        private IAccount _account;
+
+        public AccountController(IAccount account)
+        {
+            this._account = account;
+        }
+
         [HttpPost]
         [Route("api/Account/Login")]
-        public void Login(Login user)
+        public void Login(LoginViewModel user)
         {
 
         }
 
         [HttpPost]
         [Route("api/Account/Register")]
-        public void Register(Register user)
+        public void Register(RegisterViewModel user)
         {
-
+            _account.Register(user);
         }
     }
 }

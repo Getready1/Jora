@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity.ModelConfiguration;
-using System.Linq;
-using System.Web;
+﻿using System.Data.Entity.ModelConfiguration;
 
 namespace SocialNetwork.Models
 {
     public class Follow
     {
-        public Guid FollowId { get; set; }
+        public int FollowId { get; set; }
         public virtual User Follower { get; set; }
         public virtual User Followed { get; set; }
     }

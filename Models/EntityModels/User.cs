@@ -1,17 +1,16 @@
-﻿using System;
+﻿using System.Collections.Generic;
 using System.Data.Entity.ModelConfiguration;
-using System.Collections.Generic;
 
 namespace SocialNetwork.Models
 {
     public class User
     {
-        public Guid UserId { get; set; }
+        public int UserId { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string Password { get; set; }
         public string Email { get; set; }
-        public bool Gender { get; set; }
+        public byte Gender { get; set; }
         public string Country { get; set; }
         public string City { get; set; } 
 

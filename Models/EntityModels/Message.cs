@@ -1,14 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Data.Entity.ModelConfiguration;
-using System.Linq;
-using System.Web;
+﻿using System.Data.Entity.ModelConfiguration;
 
 namespace SocialNetwork.Models
 {
     public class Message
     {
-        public Guid MessageId { get; set; }
+        public int MessageId { get; set; }
         public string Text { get; set; }
         public virtual User Sender { get; set; }
         public virtual User Reciever { get; set; }

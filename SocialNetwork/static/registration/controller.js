@@ -5,7 +5,7 @@ RegistrationModule.controller('RegistrationCtrl',['$scope', '$http', function ($
 	$scope.sendDataForRegistration = function () {
 		$http({
 		  method: 'POST',
-		  url: '/api/Account/',
+		  url: '/api/Account/Register',
 		  data: newUserData
 		}).then(function successCallback(response) {
 		    console.log(response);

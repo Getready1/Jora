@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SocialNetwork.Models.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net;
@@ -9,12 +10,16 @@ namespace SocialNetwork.Controllers
 {
     public class AccountController : ApiController
     {
-        public void Register()
+        [HttpPost]
+        [Route("api/Account/Login")]
+        public void Login(Login user)
         {
 
         }
 
-        public void Login([FromBody]string value)
+        [HttpPost]
+        [Route("api/Account/Register")]
+        public void Register(Register user)
         {
 
         }

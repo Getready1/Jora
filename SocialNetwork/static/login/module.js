@@ -1,0 +1,1 @@
+var LoginModule = angular.module('LoginModule', []);

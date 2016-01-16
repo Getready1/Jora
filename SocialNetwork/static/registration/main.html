@@ -1,0 +1,24 @@
+<p>Email</p>
+<input ng-model="newUserModel.Email" type="text"><br>
+<p>Password</p>
+<input type="password"><br>
+<p>Password Again</p>
+<input ng-model="newUserModel.Password" type="password"><br>
+<p>First Name</p>
+<input ng-model="newUserModel.FirstName" type="text"><br>
+<p>Last Name</p>
+<input ng-model="newUserModel.LastName" type="text"><br>
+<p>Birthday Day</p>
+<input ng-model="newUserModel.BirthDay" type="text"><br>
+<p>Birthday Month</p>
+<input ng-model="newUserModel.BirthMonth" type="text"><br>
+<p>Birthday Year</p>
+<input ng-model="newUserModel.BirthYear" type="text"><br>
+<p>Gender</p>
+<select ng-model="newUserModel.Gender">
+	<option></option>
+	<option value="0">Female</option>
+	<option value="1">Male</option>
+</select><br>
+<br>
+<button ng-click="sendDataForRegistration()" id="button-create-account">Create Account</button>

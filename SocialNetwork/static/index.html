@@ -1,50 +1,21 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="en" ng-app="MainModule">
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<!--
+	<base href="/">
+-->
 </head>
 <body>
-	<!--
-		<input type="text">
-		<input type="password">
-		<a>Enter</a>
-		<a>Register</a>
--->
-
-
-		<input id="email" type="text">
-		<input id="password" type="password">
-		<input id="password-check" type="password">
-		<input id="firstname" type="text">
-		<input id="lastname" type="text">
-		<input id="birthday" type="text">
-		<select id="gender">
-			<option></option>
-			<option value="0">Female</option>
-			<option value="1">Male</option>
-		</select>
-		<a href="#" id="button-create-account">Create Account</a>
-		<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
-<script>
-
-$('#button-create-account').on('click', function () {
-	var createUserPostParams = {
-		'FirstName': $('#firstname').val(),
-		'LastName': $('#lastname').val(),
-		'Email': $('#email').val(),
-		'Password': $('#password').val(),
-		'Gender': $('#gender').val(),
-	};
-
-	$.post('/api/Users/', createUserPostParams, function (data) {
-		console.log(data);
-	});
-});
-
-</script>
-
-		
-
+	<div ng-view></div>
+	<script src="/static/bower_components/jquery/dist/jquery.min.js"></script>
+	<script src="/static/bower_components/angular/angular.min.js"></script>
+	<script src="/static/bower_components/angular-route/angular-route.min.js"></script>
+	<script src="/static/app.js"></script>
+	<script src="/static/registration/module.js"></script>
+	<script src="/static/registration/controller.js"></script>
+	<script src="/static/login/module.js"></script>
+	<script src="/static/login/controller.js"></script>
 </body>
 </html>

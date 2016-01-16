@@ -1,0 +1,22 @@
+﻿using SocialNetwork.Logging;
+using SocialNetwork.Services.UserService;
+
+namespace SocialNetwork.AccountService.Login
+{
+    public class LoginService : ILoginService
+    {
+        private IUserService _userService;
+        private ILogger _log;
+
+        public LoginService(IUserService userService, ILogger log)
+        {
+            this._userService = userService;
+            this._log = log;
+        }
+
+        public bool Login(string email, string password)
+        {
+            return false;
+        }
+    }
+}

@@ -1,4 +1,5 @@
-﻿using SocialNetwork.Services.UnitOfWorkService;
+﻿using SocialNetwork.Models;
+using SocialNetwork.Services.UnitOfWorkService;
 using System.Collections.Generic;
 using System.Web.Http;
 
@@ -26,8 +27,9 @@ namespace SocialNetwork.Controllers
         }
 
         // POST: api/Users
-        public void Post([FromBody]string value)
+        public void Post(User user)
         {
+
         }
 
         // PUT: api/Users/5

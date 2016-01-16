@@ -1,0 +1,22 @@
+{
+  "name": "socialnetwork",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "Горчаг Михаил <m.dekart@dekart.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/Getready1/SocialNetwork",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "~1.4.8",
+    "jquery": "~2.2.0"
+  }
+}

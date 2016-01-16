@@ -1,7 +1,6 @@
-﻿using System.Collections.Generic;
-using System.Data.Entity.ModelConfiguration;
+﻿using System.Data.Entity.ModelConfiguration;
 
-namespace SocialNetwork.Models
+namespace SocialNetwork.Models.EntityModels
 {
     public class Post
     {

@@ -17,7 +17,8 @@ namespace SocialNetwork
             config.Routes.MapHttpRoute(
                 name: "MainPage",
                 routeTemplate: "{controller}/{action}",
-                defaults: new { controller = "Home", action = "Index" }
+                defaults: new { controller = "Home", action = "Index" },
+                constraints: new { controller = "Home", action = "Index" }
             );
         }
     }

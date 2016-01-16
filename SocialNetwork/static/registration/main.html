@@ -1,12 +1,24 @@
-<input id="email" type="text"><br>
+<p>Email</p>
+<input ng-model="newUserModel.email" id="email" type="text"><br>
+<p>Password</p>
 <input id="password" type="password"><br>
-<input id="password-check" type="password"><br>
-<input id="firstname" type="text"><br>
-<input id="lastname" type="text"><br>
-<input id="birthday" type="text"><br>
-<select id="gender">
+<p>Password Again</p>
+<input ng-model="newUserModel.password" id="password-check" type="password"><br>
+<p>First Name</p>
+<input ng-model="newUserModel.firstName" id="firstname" type="text"><br>
+<p>Last Name</p>
+<input ng-model="newUserModel.lastName" id="lastname" type="text"><br>
+<p>Birthday Day</p>
+<input ng-model="newUserModel.birthDay" id="birthday" type="text"><br>
+<p>Birthday Month</p>
+<input ng-model="newUserModel.birthMonth" id="birthday" type="text"><br>
+<p>Birthday Year</p>
+<input ng-model="newUserModel.birthYear" id="birthday" type="text"><br>
+<p>Gender</p>
+<select ng-model="newUserModel.gender" id="gender">
 	<option></option>
 	<option value="0">Female</option>
 	<option value="1">Male</option>
 </select><br>
-<button id="button-create-account">Create Account</button>
+<br>
+<button ng-click="sendDataForRegistration()" id="button-create-account">Create Account</button>

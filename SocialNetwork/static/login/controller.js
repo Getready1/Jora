@@ -1,6 +1,6 @@
 LoginModule.controller('LoginCtrl', '$http' ,function ($scope) {
 
-	$scope.userData = {};
+	var userData = $scope.userData = {};
 
 	$scope.logInUser = function () {
 		$http({

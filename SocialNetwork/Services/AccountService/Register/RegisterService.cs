@@ -1,7 +1,6 @@
 ﻿using SocialNetwork.Logging;
-using SocialNetwork.Models;
+using SocialNetwork.Models.EntityModels;
 using SocialNetwork.Services.UserService;
-using System;
 
 namespace SocialNetwork.AccountService.Register
 {

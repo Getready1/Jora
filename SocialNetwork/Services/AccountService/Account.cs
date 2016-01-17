@@ -28,11 +28,6 @@ namespace SocialNetwork.AccountService
             return this._loginService.Login(user.Email, user.Password);
         }
 
-        public bool Login(RegisterViewModel user)
-        {
-            return this._loginService.Login(user.Email, user.Password);
-        }
-
         public void Logout()
         {
             this._logoutService.Logout();

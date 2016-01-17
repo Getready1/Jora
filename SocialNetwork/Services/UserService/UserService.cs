@@ -1,6 +1,5 @@
-﻿using SocialNetwork.Models;
+﻿using SocialNetwork.Models.EntityModels;
 using SocialNetwork.Services.ManagementServices;
-using SocialNetwork.Services.RepositoryService;
 using SocialNetwork.Services.UnitOfWorkService;
 using System.Linq;
 

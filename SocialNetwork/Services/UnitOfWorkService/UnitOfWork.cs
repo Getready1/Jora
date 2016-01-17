@@ -1,6 +1,6 @@
 ﻿using Autofac;
 using SocialNetwork.DAL;
-using SocialNetwork.Models;
+using SocialNetwork.Models.EntityModels;
 using SocialNetwork.Services.RepositoryService;
 using System;
 

@@ -7,7 +7,7 @@ using SocialNetwork.AccountService.Logout;
 using SocialNetwork.AccountService.Register;
 using SocialNetwork.DAL;
 using SocialNetwork.Logging;
-using SocialNetwork.Models;
+using SocialNetwork.Models.EntityModels;
 using SocialNetwork.Services.ManagementServices;
 using SocialNetwork.Services.ManagementServices.AddServices;
 using SocialNetwork.Services.ManagementServices.DeleteServices;

@@ -1,5 +1,8 @@
 ﻿using SocialNetwork.AccountService;
 using SocialNetwork.Models.ViewModels;
+using System.Linq;
+using System.Net.Http;
+using System.Net.Http.Headers;
 using System.Web.Http;
 
 namespace SocialNetwork.Controllers
@@ -13,18 +16,26 @@ namespace SocialNetwork.Controllers
             this._account = account;
         }
 
-        [HttpPost]
+        [HttpGet]
         [Route("api/Account/Login")]
-        public void Login(LoginViewModel user)
+        public bool Login(LoginViewModel user)
         {
-
+            return _account.Login(user);
         }
 
         [HttpPost]
         [Route("api/Account/Register")]
         public void Register(RegisterViewModel user)
         {
-            _account.Register(user);
+            string sessionId = "";
+
+            CookieHeaderValue cookie = Request.Headers.GetCookies("session-id").FirstOrDefault();
+            if (cookie != null)
+            {
+                sessionId = cookie["session-id"].Value;
+            }
+
+            //_account.Register(user);
         }
     }
 }

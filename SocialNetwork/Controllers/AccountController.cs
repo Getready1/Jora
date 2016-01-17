@@ -1,5 +1,7 @@
 ﻿using SocialNetwork.AccountService;
 using SocialNetwork.Models.ViewModels;
+using System.Net;
+using System.Net.Http;
 using System.Web.Http;
 
 namespace SocialNetwork.Controllers
@@ -15,9 +17,16 @@ namespace SocialNetwork.Controllers
 
         [HttpPost]
         [Route("api/Account/Login")]
-        public bool Login(LoginViewModel user)
+        public HttpResponseMessage Login(LoginViewModel user)
         {
-           return _account.Login(user);
+           if(_account.Login(user))
+            {
+                return Request.CreateResponse(HttpStatusCode.OK);
+            }
+           else
+            {
+                return Request.CreateResponse(HttpStatusCode.NotFound);
+            }
         }
 
         [HttpPost]

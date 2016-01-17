@@ -1,7 +1,6 @@
 ﻿using SocialNetwork.AccountService;
 using SocialNetwork.Models.ViewModels;
 using System.Web.Http;
-using System.Net.Http;
 
 namespace SocialNetwork.Controllers
 {

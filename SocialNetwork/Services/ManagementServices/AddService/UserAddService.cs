@@ -1,5 +1,6 @@
 ﻿using SocialNetwork.Logging;
 using SocialNetwork.Models;
+using SocialNetwork.Models.EntityModels;
 using System.Collections.Generic;
 
 namespace SocialNetwork.Services.ManagementServices.AddServices

@@ -1,5 +1,6 @@
 ﻿using SocialNetwork.Logging;
 using SocialNetwork.Models;
+using SocialNetwork.Models.EntityModels;
 
 namespace SocialNetwork.Services.ManagementServices.DeleteServices
 {

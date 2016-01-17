@@ -1,4 +1,5 @@
 ﻿using SocialNetwork.Models;
+using SocialNetwork.Models.EntityModels;
 using SocialNetwork.Services.RepositoryService;
 
 namespace SocialNetwork.Services.UserService

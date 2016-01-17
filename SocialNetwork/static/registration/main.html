@@ -1,24 +1,114 @@
-<p>Email</p>
-<input ng-model="newUserModel.Email" type="text"><br>
-<p>Password</p>
-<input type="password"><br>
-<p>Password Again</p>
-<input ng-model="newUserModel.Password" type="password"><br>
-<p>First Name</p>
-<input ng-model="newUserModel.FirstName" type="text"><br>
-<p>Last Name</p>
-<input ng-model="newUserModel.LastName" type="text"><br>
-<p>Birthday Day</p>
-<input ng-model="newUserModel.BirthDay" type="text"><br>
-<p>Birthday Month</p>
-<input ng-model="newUserModel.BirthMonth" type="text"><br>
-<p>Birthday Year</p>
-<input ng-model="newUserModel.BirthYear" type="text"><br>
-<p>Gender</p>
-<select ng-model="newUserModel.Gender">
-	<option></option>
-	<option value="0">Female</option>
-	<option value="1">Male</option>
-</select><br>
-<br>
-<button ng-click="sendDataForRegistration()" id="button-create-account">Create Account</button>
+<head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="header_content">
+            <div class="logo">
+
+            </div>
+
+            <div class="login_form">
+                <input id="username" type="email" class="login_email" placeholder="Email">
+                <input id="password" type="password" class="login_password" placeholder="Пароль">
+                <button id="login_btn">Вход</button>
+                <div class="social_login">
+                    <a class="facebook_login">
+                        <img src="http://x.tagstat.com/im/icons/social/fb.png">
+                    </a>
+                    <a class="google_login">
+                        <img src="http://x.tagstat.com/im/icons/social/gplus.png">
+                    </a>
+                </div>
+                <div class="remember_me">
+                    <input checked="" type="checkbox">
+                    <label>Запомнить меня</label>
+                </div>
+                <div class="forgot_password">
+                    <a href="#">Забыли пароль?</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="middle">
+        <div class="content">
+            <div class="left_content">
+                <div class="description">
+                    <h1>
+                        Социальная сеть для новых знакомств :)
+                    </h1>
+                    <h2>
+                        Миллионы людей каждый день весело проводят время и заводят новые знакомства в Tagged. Вы тоже можете!
+                    </h2>
+                </div>
+                <div class="social_reg">
+                    <div class="social_btn">
+                        <div class="google_btn">
+                            <div class="google_img">
+
+                            </div>
+                            <span>
+                                Войти с Google
+                            </span>
+                        </div>
+                        <div class="facebook_btn">
+                            <div class="facebook_img">
+
+                            </div>
+                            <span>
+                                Войти с Facebook
+                            </span>
+                        </div>
+                    </div>
+                    <div class="divider">
+                        <div class="vertical_line"></div>
+                        <span>или</span>
+                    </div>
+                    <div class="signup_email_text">
+                        Зарегистрируйтесь под адресом вашей электронной почты сегодня!
+                    </div>
+                    <div class="arrow_reg">
+                        <img src="http://x.tagstat.com/im/regpath/arrow.png">
+                    </div>
+                </div>
+            </div>
+
+            <div class="right_content">
+                <div class="join_free">
+                    <h1>
+                        Присоединяйся бесплатно!
+                    </h1>
+                    <h2>
+                        Здесь более 100 миллионов участников
+                    </h2>
+                    <div class="border">
+
+                    </div>
+                </div>
+                <div class="register_form">
+                    <input ng-model="newUserModel.FirstName" id="first_name" type="text" placeholder="Имя">
+                    <input ng-model="newUserModel.LastName" id="last_name" type="text" placeholder="Фамилия">
+                    <input ng-model="newUserModel.Email" type="text" placeholder="Email">
+                    <input ng-model="newUserModel.Password" type="password" placeholder="Пароль">
+                    <input ng-model="newUserModel.BirthDay" type="text" placeholder="День рождения">
+                    <input ng-model="newUserModel.BirthMonth" type="text" placeholder="Месяц рождения">
+                    <input ng-model="newUserModel.BirthYear" type="text" placeholder="Год рождения">
+                    <select ng-model="newUserModel.Gender">
+                        <option disabled="disabled" selected="selected">Пол</option>
+                        <option value="0">Женский</option>
+                        <option value="1">Мужской</option>
+                    </select><br>
+                    <br>
+                    <button ng-click="sendDataForRegistration()" id="button-create-account">Зарегистрироваться</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+
+    </div>
+</body>
+</html>

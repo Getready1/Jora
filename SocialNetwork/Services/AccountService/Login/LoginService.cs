@@ -16,6 +16,14 @@ namespace SocialNetwork.AccountService.Login
 
         public bool Login(string email, string password)
         {
+            var user = _userService.GetUserByEmail(email);
+
+            if (user == null)
+                return false;
+
+            if (user.Password == password)
+                return true;
+
             return false;
         }
     }

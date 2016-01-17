@@ -8,5 +8,6 @@ namespace SocialNetwork.Services.UserService
         User AddUser(User model);
         User EditUser(User model, int userId);
         void DeleteUser(int? userId);
+        User GetById(int id);
     }
 }

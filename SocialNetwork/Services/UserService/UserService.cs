@@ -45,5 +45,10 @@ namespace SocialNetwork.Services.UserService
             _unitOfWork.UserRepository.Delete(editUser);
             _unitOfWork.SaveChanges();
         }
+
+        public User GetById(int id)
+        {
+            return _unitOfWork.UserRepository.GetById(id);
+        }
     }
 }

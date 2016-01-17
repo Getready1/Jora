@@ -80,8 +80,12 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="Microsoft.CSharp" />
-    <Reference Include="Newtonsoft.Json, Version=8.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\packages\Newtonsoft.Json.8.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=6.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.6.0.4\lib\net45\Newtonsoft.Json.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="System.Net.Http" />
@@ -115,7 +119,131 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Global.asax" />
+    <Content Include="static\app.js" />
+    <Content Include="static\bower_components\angular-route\angular-route.js" />
+    <Content Include="static\bower_components\angular-route\angular-route.min.js" />
+    <Content Include="static\bower_components\angular-route\index.js" />
+    <Content Include="static\bower_components\angular\angular-csp.css" />
+    <Content Include="static\bower_components\angular\angular.js" />
+    <Content Include="static\bower_components\angular\angular.min.js" />
+    <Content Include="static\bower_components\angular\index.js" />
+    <Content Include="static\bower_components\jquery\AUTHORS.txt" />
+    <Content Include="static\bower_components\jquery\dist\jquery.js" />
+    <Content Include="static\bower_components\jquery\dist\jquery.min.js" />
+    <Content Include="static\bower_components\jquery\LICENSE.txt" />
+    <Content Include="static\bower_components\jquery\src\ajax.js" />
+    <Content Include="static\bower_components\jquery\src\ajax\jsonp.js" />
+    <Content Include="static\bower_components\jquery\src\ajax\load.js" />
+    <Content Include="static\bower_components\jquery\src\ajax\parseJSON.js" />
+    <Content Include="static\bower_components\jquery\src\ajax\parseXML.js" />
+    <Content Include="static\bower_components\jquery\src\ajax\script.js" />
+    <Content Include="static\bower_components\jquery\src\ajax\var\location.js" />
+    <Content Include="static\bower_components\jquery\src\ajax\var\nonce.js" />
+    <Content Include="static\bower_components\jquery\src\ajax\var\rquery.js" />
+    <Content Include="static\bower_components\jquery\src\ajax\xhr.js" />
+    <Content Include="static\bower_components\jquery\src\attributes.js" />
+    <Content Include="static\bower_components\jquery\src\attributes\attr.js" />
+    <Content Include="static\bower_components\jquery\src\attributes\classes.js" />
+    <Content Include="static\bower_components\jquery\src\attributes\prop.js" />
+    <Content Include="static\bower_components\jquery\src\attributes\support.js" />
+    <Content Include="static\bower_components\jquery\src\attributes\val.js" />
+    <Content Include="static\bower_components\jquery\src\callbacks.js" />
+    <Content Include="static\bower_components\jquery\src\core.js" />
+    <Content Include="static\bower_components\jquery\src\core\access.js" />
+    <Content Include="static\bower_components\jquery\src\core\init.js" />
+    <Content Include="static\bower_components\jquery\src\core\parseHTML.js" />
+    <Content Include="static\bower_components\jquery\src\core\ready.js" />
+    <Content Include="static\bower_components\jquery\src\core\support.js" />
+    <Content Include="static\bower_components\jquery\src\core\var\rsingleTag.js" />
+    <Content Include="static\bower_components\jquery\src\css.js" />
+    <Content Include="static\bower_components\jquery\src\css\addGetHookIf.js" />
+    <Content Include="static\bower_components\jquery\src\css\adjustCSS.js" />
+    <Content Include="static\bower_components\jquery\src\css\curCSS.js" />
+    <Content Include="static\bower_components\jquery\src\css\defaultDisplay.js" />
+    <Content Include="static\bower_components\jquery\src\css\hiddenVisibleSelectors.js" />
+    <Content Include="static\bower_components\jquery\src\css\showHide.js" />
+    <Content Include="static\bower_components\jquery\src\css\support.js" />
+    <Content Include="static\bower_components\jquery\src\css\var\cssExpand.js" />
+    <Content Include="static\bower_components\jquery\src\css\var\getStyles.js" />
+    <Content Include="static\bower_components\jquery\src\css\var\isHidden.js" />
+    <Content Include="static\bower_components\jquery\src\css\var\rmargin.js" />
+    <Content Include="static\bower_components\jquery\src\css\var\rnumnonpx.js" />
+    <Content Include="static\bower_components\jquery\src\css\var\swap.js" />
+    <Content Include="static\bower_components\jquery\src\data.js" />
+    <Content Include="static\bower_components\jquery\src\data\accepts.js" />
+    <Content Include="static\bower_components\jquery\src\data\Data.js" />
+    <Content Include="static\bower_components\jquery\src\data\support.js" />
+    <Content Include="static\bower_components\jquery\src\data\var\acceptData.js" />
+    <Content Include="static\bower_components\jquery\src\data\var\dataPriv.js" />
+    <Content Include="static\bower_components\jquery\src\data\var\dataUser.js" />
+    <Content Include="static\bower_components\jquery\src\deferred.js" />
+    <Content Include="static\bower_components\jquery\src\deprecated.js" />
+    <Content Include="static\bower_components\jquery\src\dimensions.js" />
+    <Content Include="static\bower_components\jquery\src\effects.js" />
+    <Content Include="static\bower_components\jquery\src\effects\animatedSelector.js" />
+    <Content Include="static\bower_components\jquery\src\effects\support.js" />
+    <Content Include="static\bower_components\jquery\src\effects\Tween.js" />
+    <Content Include="static\bower_components\jquery\src\event.js" />
+    <Content Include="static\bower_components\jquery\src\event\ajax.js" />
+    <Content Include="static\bower_components\jquery\src\event\alias.js" />
+    <Content Include="static\bower_components\jquery\src\event\focusin.js" />
+    <Content Include="static\bower_components\jquery\src\event\support.js" />
+    <Content Include="static\bower_components\jquery\src\event\trigger.js" />
+    <Content Include="static\bower_components\jquery\src\exports\amd.js" />
+    <Content Include="static\bower_components\jquery\src\exports\global.js" />
+    <Content Include="static\bower_components\jquery\src\intro.js" />
+    <Content Include="static\bower_components\jquery\src\jquery.js" />
+    <Content Include="static\bower_components\jquery\src\manipulation.js" />
+    <Content Include="static\bower_components\jquery\src\manipulation\buildFragment.js" />
+    <Content Include="static\bower_components\jquery\src\manipulation\createSafeFragment.js" />
+    <Content Include="static\bower_components\jquery\src\manipulation\getAll.js" />
+    <Content Include="static\bower_components\jquery\src\manipulation\setGlobalEval.js" />
+    <Content Include="static\bower_components\jquery\src\manipulation\support.js" />
+    <Content Include="static\bower_components\jquery\src\manipulation\var\nodeNames.js" />
+    <Content Include="static\bower_components\jquery\src\manipulation\var\rcheckableType.js" />
+    <Content Include="static\bower_components\jquery\src\manipulation\var\rleadingWhitespace.js" />
+    <Content Include="static\bower_components\jquery\src\manipulation\var\rscriptType.js" />
+    <Content Include="static\bower_components\jquery\src\manipulation\var\rtagName.js" />
+    <Content Include="static\bower_components\jquery\src\manipulation\wrapMap.js" />
+    <Content Include="static\bower_components\jquery\src\manipulation\_evalUrl.js" />
+    <Content Include="static\bower_components\jquery\src\offset.js" />
+    <Content Include="static\bower_components\jquery\src\outro.js" />
+    <Content Include="static\bower_components\jquery\src\queue.js" />
+    <Content Include="static\bower_components\jquery\src\queue\delay.js" />
+    <Content Include="static\bower_components\jquery\src\selector-native.js" />
+    <Content Include="static\bower_components\jquery\src\selector-sizzle.js" />
+    <Content Include="static\bower_components\jquery\src\selector.js" />
+    <Content Include="static\bower_components\jquery\src\serialize.js" />
+    <Content Include="static\bower_components\jquery\src\support.js" />
+    <Content Include="static\bower_components\jquery\src\traversing.js" />
+    <Content Include="static\bower_components\jquery\src\traversing\findFilter.js" />
+    <Content Include="static\bower_components\jquery\src\traversing\var\dir.js" />
+    <Content Include="static\bower_components\jquery\src\traversing\var\rneedsContext.js" />
+    <Content Include="static\bower_components\jquery\src\traversing\var\siblings.js" />
+    <Content Include="static\bower_components\jquery\src\var\arr.js" />
+    <Content Include="static\bower_components\jquery\src\var\class2type.js" />
+    <Content Include="static\bower_components\jquery\src\var\concat.js" />
+    <Content Include="static\bower_components\jquery\src\var\deletedIds.js" />
+    <Content Include="static\bower_components\jquery\src\var\document.js" />
+    <Content Include="static\bower_components\jquery\src\var\documentElement.js" />
+    <Content Include="static\bower_components\jquery\src\var\hasOwn.js" />
+    <Content Include="static\bower_components\jquery\src\var\indexOf.js" />
+    <Content Include="static\bower_components\jquery\src\var\pnum.js" />
+    <Content Include="static\bower_components\jquery\src\var\push.js" />
+    <Content Include="static\bower_components\jquery\src\var\rcssNum.js" />
+    <Content Include="static\bower_components\jquery\src\var\rnotwhite.js" />
+    <Content Include="static\bower_components\jquery\src\var\slice.js" />
+    <Content Include="static\bower_components\jquery\src\var\support.js" />
+    <Content Include="static\bower_components\jquery\src\var\toString.js" />
+    <Content Include="static\bower_components\jquery\src\wrap.js" />
     <Content Include="static\index.html" />
+    <Content Include="static\login\controller.js" />
+    <Content Include="static\login\main.html" />
+    <Content Include="static\login\module.js" />
+    <Content Include="static\registration\controller.js" />
+    <Content Include="static\registration\main.html" />
+    <Content Include="static\registration\module.js" />
+    <Content Include="static\registration\style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -123,6 +251,7 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="DAL\Context.cs" />
     <Compile Include="DAL\DbInitializer.cs" />
     <Compile Include="DAL\IContext.cs" />
@@ -165,6 +294,22 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
+    <Content Include="static\bower_components\angular-route\.bower.json" />
+    <Content Include="static\bower_components\angular-route\angular-route.min.js.map" />
+    <Content Include="static\bower_components\angular-route\bower.json" />
+    <Content Include="static\bower_components\angular-route\package.json" />
+    <Content Include="static\bower_components\angular-route\README.md" />
+    <Content Include="static\bower_components\angular\.bower.json" />
+    <Content Include="static\bower_components\angular\angular.min.js.gzip" />
+    <Content Include="static\bower_components\angular\angular.min.js.map" />
+    <Content Include="static\bower_components\angular\bower.json" />
+    <Content Include="static\bower_components\angular\package.json" />
+    <Content Include="static\bower_components\angular\README.md" />
+    <Content Include="static\bower_components\jquery\.bower.json" />
+    <Content Include="static\bower_components\jquery\bower.json" />
+    <Content Include="static\bower_components\jquery\dist\jquery.min.map" />
+    <Content Include="static\bower_components\jquery\README.md" />
+    <Content Include="static\bower_components\jquery\src\.jshintrc" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

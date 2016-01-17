@@ -1,4 +1,4 @@
-LoginModule.controller('LoginCtrl', '$http' ,function ($scope) {
+LoginModule.controller('LoginCtrl', ['$scope', '$http', function ($scope, $http) {
 
 	var userData = $scope.userData = {};
 
@@ -13,4 +13,4 @@ LoginModule.controller('LoginCtrl', '$http' ,function ($scope) {
 		    console.log(response);
 		});
 	};
-});
+}]);

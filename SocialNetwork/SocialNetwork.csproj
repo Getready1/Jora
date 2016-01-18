@@ -240,10 +240,12 @@
     <Content Include="static\login\controller.js" />
     <Content Include="static\login\main.html" />
     <Content Include="static\login\module.js" />
+    <Content Include="static\mypage.html" />
     <Content Include="static\registration\controller.js" />
     <Content Include="static\registration\main.html" />
     <Content Include="static\registration\module.js" />
     <Content Include="static\registration\style.css" />
+    <Content Include="static\style.css" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

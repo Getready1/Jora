@@ -1,0 +1,291 @@
+﻿body {
+    margin: 0;
+    padding: 0;
+    font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
+    font-size: 11px;
+}
+
+#header {
+    background: rgb(69,72,77);
+    background: -moz-linear-gradient(top, rgba(69,72,77,1) 0%, rgba(0,0,0,1) 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(69,72,77,1)), color-stop(100%,rgba(0,0,0,1)));
+    background: -webkit-linear-gradient(top, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
+    background: -o-linear-gradient(top, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
+    background: -ms-linear-gradient(top, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
+    background: linear-gradient(to bottom, rgba(69,72,77,1) 0%,rgba(0,0,0,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45484d', endColorstr='#000000',GradientType=0 );
+    height: 41px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25), 0 -1px 0 rgba(0, 0, 0, 0.1) inset;
+    min-width: 1130px;
+}
+
+.head_content {
+    width: 860px;
+    margin: auto;
+}
+
+.head_search input {
+    background: url("https://xn--v1a.xn--j1amh/templates/Default/images/inp_se.png") no-repeat scroll 5px center #FFFFFF;
+    border: 1px solid #C6D4DC;
+    color: #C1CAD0;
+    margin-bottom: 5px;
+    margin-left: 4px;
+    margin-top: 5px;
+    padding: 5px 5px 5px 25px;
+    width: 200px;
+    float: left;
+    margin: 0px;
+    border-right: 0px;
+    padding-right: 0px;
+    border: 0px solid #56799f;
+    border-radius: 1px;
+    -moz-border-radius: 1px;
+    -webkit-border-radius: 1px;
+    box-shadow: inset 0px 1px 4px 0px #c8c8c8;
+    -moz-box-shadow: inset 0px 1px 4px 0px #c8c8c8;
+    -webkit-box-shadow: inset 0px 1px 4px 0px #c8c8c8;
+    margin-top: 7px;
+}
+
+.search_types {
+    background-position: 5px;
+    background: url("https://xn--v1a.xn--j1amh/templates/Default/images/sel.gif") no-repeat right;
+    border: 0px;
+    padding: 5px;
+    color: #c1cad0;
+    float: left;
+    width: 90px;
+    border-left: 0px;
+    text-align: right;
+    padding-right: 15px;
+    cursor: pointer;
+    margin-left: -115px;
+    margin-top: 7px;
+}
+
+.middle_content {
+    width: 860px;
+    margin: auto;
+}
+
+.left_content {
+    float: left;
+    font-size: 11px;
+}
+
+    .left_content a {
+        display: inherit;
+        cursor: pointer;
+        width: 130px;
+        height: 20px;
+        margin-top: 3px;
+    }
+
+        .left_content a:hover {
+            background: none repeat scroll 0 0 #D3D3D3;
+            border-radius: 3px;
+            text-decoration: none;
+        }
+
+    .left_content span {
+        position: relative;
+        top: 3px;
+        left: 5px;
+    }
+
+.right_content {
+    float: right;
+    width: 720px;
+    min-height: 510px;
+    background: #fff;
+    box-shadow: 0px 1px 12px #aaa;
+    padding-top: 12px;
+}
+
+.top_controls {
+    height: 23px;
+    border-bottom: 1px solid rgba(69,72,77,1);
+}
+
+.dialogs_active {
+    float: left;
+    background: rgba(69,72,77,1);
+    color: #FFFFFF;
+    width: 61px;
+    height: 23px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+    .dialogs_active span {
+        position: relative;
+        top: 4px;
+        left: 9px;
+    }
+
+.friend_list {
+    float: right;
+    margin-top: 3px;
+    margin-right: 10px;
+    text-decoration: none;
+    color: #000000;
+}
+
+    .friend_list:hover {
+        text-decoration: underline;
+    }
+
+.bottom_controls {
+    height: 35px;
+    padding: 15px 10px 5px 10px;
+    background: #F7F7F7;
+    border-bottom: 1px solid #DAE1E8;
+}
+
+.mess_search {
+    float: left;
+}
+
+    .mess_search input {
+        background: url("https://xn--v1a.xn--j1amh/templates/Default/images/inp_se.png") no-repeat scroll 5px center #FFFFFF;
+        border: 1px solid #C6D4DC;
+        color: #C1CAD0;
+        padding: 5px 5px 5px 25px;
+        width: 200px;
+    }
+
+.write {
+    float: right;
+    padding: 6px 16px 7px 16px;
+    margin: 0;
+    font-size: 11px;
+    display: inline-block;
+    zoom: 1;
+    cursor: pointer;
+    white-space: nowrap;
+    outline: none;
+    font-family: tahoma, arial, verdana, sans-serif, Lucida Sans;
+    vertical-align: top;
+    overflow: visible;
+    line-height: 13px;
+    text-decoration: none;
+    background: none;
+    background-color: rgba(69,72,77,1);
+    color: #FFF;
+    border: 0;
+    -webkit-border-radius: 2px;
+    -khtml-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    border-radius: 2px;
+    -webkit-transition: background-color 100ms ease-in-out;
+    -khtml-transition: background-color 100ms ease-in-out;
+    -moz-transition: background-color 100ms ease-in-out;
+    -ms-transition: background-color 100ms ease-in-out;
+    -o-transition: background-color 100ms ease-in-out;
+    transition: background-color 100ms ease-in-out;
+}
+
+.summary {
+    color: #45688E;
+    padding: 13px 10px 5px;
+    background: #FFF;
+    border-bottom: 1px solid #DAE1E8;
+}
+
+.dialogs a {
+    color: #2B587A;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.dialog {
+    cursor: pointer;
+    padding: 5px 10px 5px 7px;
+    border-bottom: 1px solid #e4e8ed;
+}
+
+    .dialog:hover {
+        background: #edf1f5;
+        border-color: #DAE1E8;
+    }
+
+    .dialog table {
+        width: 100%;
+    }
+
+.dialog_photo {
+    width: 50px;
+    padding: 5px 5px 2px;
+    vertical-align: middle;
+}
+
+.dialog_info {
+    padding: 5px;
+    vertical-align: middle;
+    width: 125px;
+}
+
+.dialog_user {
+    width: 120px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+}
+
+.dialog_date {
+    color: #999999;
+    font-size: 0.9em;
+}
+
+.dialog_msg_content {
+    padding: 0px;
+    vertical-align: middle;
+    position: relative;
+}
+
+.dialog_msg_body {
+    padding: 6px 8px 8px;
+}
+
+.dialog_msg_text {
+    color: #67829E;
+    line-height: 160%;
+    width: 295px;
+}
+
+.dialog_del_td{
+}
+
+.dialog_del{
+    cursor: pointer;
+    background: url('https://vk.com/images/pics/statusx_op.gif') no-repeat;
+    height: 11px;
+    width: 11px;
+    margin-bottom: 35px;
+    margin-left: -1px;
+}
+
+.dialog_unread_td {
+    width: 1px;
+    vertical-align: middle;
+}
+
+.dialog_unread {
+    margin: 0 3px;
+    background: #D1DAE3;
+    padding: 4px 6px 4px 5px;
+    font-weight: bold;
+    color: #436796;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.unshown{
+    display: none;
+}

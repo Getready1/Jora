@@ -240,6 +240,8 @@
     <Content Include="static\login\controller.js" />
     <Content Include="static\login\main.html" />
     <Content Include="static\login\module.js" />
+    <Content Include="static\messages\messages.html" />
+    <Content Include="static\messages\style.css" />
     <Content Include="static\mypage.html" />
     <Content Include="static\registration\controller.js" />
     <Content Include="static\registration\main.html" />
